@@ -1,5 +1,5 @@
---// Check Game ID (Plants Vs Brainrot only)
-if game.GameId ~= 127742093697776 then
+--// Check Place ID (Plants Vs Brainrot only)
+if game.PlaceId ~= 127742093697776 then
     warn("❌ This script only works for Plants Vs Brainrot")
     return
 end
@@ -36,7 +36,7 @@ local function BuyItem(itemName)
     local args = {
         [1] = {
             [1] = itemName;
-            [2] = ""; -- fixed constant (as seen from your remote spy)
+            [2] = ""; -- constant value from your remote spy
         };
     }
     game:GetService("ReplicatedStorage")
